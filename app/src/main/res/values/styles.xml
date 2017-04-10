@@ -1,0 +1,131 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="text">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+
+    <style name="main_title" parent="text">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/textAccent</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginRight">@dimen/vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/vertical_margin</item>
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:textSize">@dimen/title_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="quiz_title" parent="text">
+        <item name="android:layout_margin">@dimen/vertical_margin</item>
+        <item name="android:textColor">@color/textAccent</item>
+        <item name="android:textSize">@dimen/quiz_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="quiz_info" parent="text">
+        <item name="android:layout_marginBottom">@dimen/horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/vertical_margin</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/body_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/scrim</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/vertical_margin</item>
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/body_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="quiz_relative_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="cardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/vertical_card_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/vertical_margin</item>
+    </style>
+
+    <style name="questions_text" parent="text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="question_image_view">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">false</item>
+
+    </style>
+
+
+    <style name="radio_group">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="radio_btn" parent="radio_group">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">40dp</item>
+
+
+    </style>
+
+    <style name="checkbox">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <style name="answer_images">
+        <item name="android:layout_width">128dp</item>
+        <item name="android:layout_height">128dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+
+</resources>

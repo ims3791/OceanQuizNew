@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fish1"
+    android:orientation="vertical"
+    tools:context="com.example.android.oceanquiznew.Quiz">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/quiz_title"
+            style="@style/quiz_title"
+            android:text="@string/quiz_title" />
+
+        <TextView
+            style="@style/quiz_info"
+            android:layout_below="@+id/quiz_title"
+            android:text="@string/quiz_info" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                style="@style/cardView"
+                card_view:cardCornerRadius="8dp">
+
+                <RelativeLayout style="@style/quiz_relative_layout">
+
+                    <ImageView
+                        android:id="@+id/q_one_image"
+                        style="@style/question_image_view"
+                        android:src="@drawable/one_black" />
+
+                    <TextView
+                        android:id="@+id/q_one"
+                        style="@style/questions_text"
+                        android:layout_alignTop="@+id/q_one_image"
+                        android:layout_toEndOf="@+id/q_one_image"
+                        android:text="@string/q1" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        style="@style/radio_group"
+                        android:layout_alignStart="@+id/q_one"
+                        android:layout_below="@+id/q_one_image">
+
+                        <RadioButton
+                            android:id="@+id/q1_a1"
+                            style="@style/radio_btn"
+                            android:text="@string/q1_option1" />
+
+                        <RadioButton
+                            android:id="@+id/q1_a2"
+                            style="@style/radio_btn"
+                            android:text="@string/q1_option2" />
+
+                        <RadioButton
+                            android:id="@+id/q1_a3"
+                            style="@style/radio_btn"
+                            android:text="@string/q1_option3" />
+
+                    </RadioGroup>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/cardView"
+                card_view:cardCornerRadius="8dp">
+
+                <RelativeLayout style="@style/quiz_relative_layout">
+
+                    <ImageView
+                        android:id="@+id/q_two_image"
+                        style="@style/question_image_view"
+                        android:src="@drawable/two_black" />
+
+                    <TextView
+                        android:id="@+id/q_two"
+                        style="@style/questions_text"
+                        android:layout_alignTop="@+id/q_two_image"
+                        android:layout_toEndOf="@+id/q_two_image"
+                        android:text="@string/q2" />
+
+                    <EditText
+                        android:id="@+id/q_two_edit_text"
+                        style="@style/edit_text"
+                        android:layout_below="@+id/q_two" />
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                style="@style/cardView"
+                card_view:cardCornerRadius="8dp">
+
+                <RelativeLayout style="@style/quiz_relative_layout">
+
+                    <ImageView
+                        android:id="@+id/q_three_image"
+                        style="@style/question_image_view"
+                        android:src="@drawable/three_black" />
+
+                    <TextView
+                        android:id="@+id/q_three"
+                        style="@style/questions_text"
+                        android:layout_alignTop="@+id/q_three_image"
+                        android:layout_toEndOf="@+id/q_three_image"
+                        android:text="@string/q3" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup2"
+                        style="@style/radio_group"
+                        android:layout_alignStart="@+id/q_three"
+                        android:layout_below="@+id/q_three_image">
+
+                        <RadioButton
+                            android:id="@+id/q3_a1"
+                            style="@style/radio_btn"
+                            android:text="@string/q3_option1" />
+
+                        <RadioButton
+                            android:id="@+id/q3_a2"
+                            style="@style/radio_btn"
+                            android:text="@string/q3_option2" />
+
+                    </RadioGroup>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/cardView"
+                card_view:cardCornerRadius="8dp">
+
+                <RelativeLayout style="@style/quiz_relative_layout">
+
+                    <ImageView
+                        android:id="@+id/q_four_image"
+                        style="@style/question_image_view"
+                        android:src="@drawable/four_black" />
+
+                    <TextView
+                        android:id="@+id/q_four"
+                        style="@style/questions_text"
+                        android:layout_alignTop="@+id/q_four_image"
+                        android:layout_toEndOf="@+id/q_four_image"
+                        android:text="@string/q4" />
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignLeft="@+id/q_four"
+                        android:layout_below="@+id/q_four"
+                        android:stretchColumns="*">
+
+
+                        <TableRow
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <CheckBox
+                                android:id="@+id/q4_cb1"
+                                style="@style/checkbox"
+                                android:layout_column="1"
+                                android:text="@string/q4_option1" />
+
+                            <CheckBox
+                                android:id="@+id/q4_cb2"
+                                style="@style/checkbox"
+                                android:layout_column="2"
+                                android:text="@string/q4_option2" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <CheckBox
+                                android:id="@+id/q4_cb3"
+                                style="@style/checkbox"
+                                android:layout_column="1"
+                                android:text="@string/q4_option3" />
+
+                            <CheckBox
+                                android:id="@+id/q4_cb4"
+                                style="@style/checkbox"
+                                android:layout_column="1"
+                                android:text="@string/q4_option4" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                style="@style/cardView"
+                card_view:cardCornerRadius="8dp">
+
+                <RelativeLayout style="@style/quiz_relative_layout">
+
+                    <ImageView
+                        android:id="@+id/q_five_image"
+                        style="@style/question_image_view"
+                        android:src="@drawable/five_black" />
+
+                    <TextView
+                        android:id="@+id/q_five"
+                        style="@style/questions_text"
+                        android:layout_alignTop="@+id/q_five_image"
+                        android:layout_toEndOf="@+id/q_five_image"
+                        android:text="@string/q5" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup8"
+                        style="@style/radio_group"
+                        android:layout_alignStart="@+id/q_five"
+                        android:layout_below="@+id/q_five">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <RadioButton
+                                android:id="@+id/q5_a1"
+                                style="@style/radio_btn" />
+
+                            <ImageView
+                                style="@style/answer_images"
+                                android:src="@drawable/manatee3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <RadioButton
+                                android:id="@+id/q5_a2"
+                                style="@style/radio_btn" />
+
+                            <ImageView
+                                style="@style/answer_images"
+                                android:src="@drawable/polar" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <RadioButton
+                                android:id="@+id/q5_a3"
+                                style="@style/radio_btn" />
+
+                            <ImageView
+                                style="@style/answer_images"
+                                android:layout_width="128dp"
+                                android:paddingBottom="@dimen/card_view_padding"
+                                android:src="@drawable/sea_lion2" />
+                        </LinearLayout>
+
+
+                    </RadioGroup>
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/cardView"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout style="@style/quiz_relative_layout">
+
+                    <ImageView
+                        android:id="@+id/q_six_image"
+                        style="@style/question_image_view"
+                        android:src="@drawable/six_black" />
+
+                    <TextView
+                        android:id="@+id/q_six"
+                        style="@style/questions_text"
+                        android:layout_alignTop="@+id/q_six_image"
+                        android:layout_toEndOf="@+id/q_six_image"
+                        android:text="@string/q6" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup6"
+                        style="@style/radio_group"
+                        android:layout_alignStart="@+id/q_six"
+                        android:layout_below="@+id/q_six_image">
+
+                        <RadioButton
+                            android:id="@+id/q6_a1"
+                            style="@style/radio_btn"
+                            android:text="@string/q6_option1" />
+
+                        <RadioButton
+                            android:id="@+id/q6_a2"
+                            style="@style/radio_btn"
+                            android:text="@string/q6_option2" />
+
+                        <RadioButton
+                            android:id="@+id/q6_a3"
+                            style="@style/radio_btn"
+                            android:text="@string/q6_option4" />
+
+
+                    </RadioGroup>
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/cardView"
+                card_view:cardCornerRadius="8dp">
+
+                <RelativeLayout style="@style/quiz_relative_layout">
+
+                    <ImageView
+                        android:id="@+id/q_seven_image"
+                        style="@style/question_image_view"
+                        android:src="@drawable/seven_black" />
+
+                    <TextView
+                        android:id="@+id/q_seven"
+                        style="@style/questions_text"
+                        android:layout_alignTop="@+id/q_seven_image"
+                        android:layout_toEndOf="@+id/q_seven_image"
+                        android:text="@string/q7" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/q_seven"
+                        android:layout_marginLeft="@dimen/card_view_padding"
+                        android:layout_marginTop="@dimen/card_view_padding"
+                        android:layout_toEndOf="@+id/q_seven_image"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            style="@style/answer_images"
+                            android:layout_marginBottom="@dimen/card_view_padding"
+                            android:src="@drawable/clown2" />
+
+                        <EditText
+                            android:id="@+id/q_seven_edit_text"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:inputType="textCapWords"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="showScore"
+                android:padding="@dimen/card_view_padding"
+                android:text="@string/submit_btn" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

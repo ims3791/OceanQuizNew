@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ocean3"
+    tools:context="com.example.android.oceanquiznew.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/main_title"
+        android:text="@string/app_name"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:textColor="@color/colorAccent"
+        android:id="@+id/name"
+        android:inputType="textCapWords"
+        android:hint="Name"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"/>
+
+    <Button
+        android:id="@+id/start_btn"
+        style="@style/button"
+        android:text="@string/start_btn"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:onClick="toQuiz"/>
+
+</RelativeLayout>
+
